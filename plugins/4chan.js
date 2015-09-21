@@ -12,7 +12,7 @@ module.exports = function(bot) {
     var exec = function(msg, reply) {
 
         var board = msg.command.params[0] || 'w';
-        var blocked=['b','hc','s','i','gif'];
+        var blocked=['b','hc','s','i','gif','h'];
         if(blocked.indexOf(board)!=-1){
           reply.sendMessage("Bloqueado para ser SFW");
         }else{
