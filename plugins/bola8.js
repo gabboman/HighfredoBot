@@ -27,7 +27,8 @@ module.exports = function(bot) {
         'Mi respuesta es no',
         'Mis fuentes dicen que no',
         'No suena bien',
-        'Lo dudo'
+        'Lo dudo',
+        'No lo se, pero dale pasta a @gabboman92'
     ];
 
     var exec = function(msg) {

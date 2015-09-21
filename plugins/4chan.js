@@ -11,8 +11,11 @@ module.exports = function(bot) {
 
     var exec = function(msg, reply) {
 
-        var board = msg.command.params[0] || 'b';
-
+        var board = msg.command.params[0] || 'w';
+        var blocked=['b','hc','s','i','gif'];
+        if(blocked.indexOf(board)!=-1){
+          reply.sendMessage("Bloqueado para ser SFW");
+        }else{
         request({url:'https://a.4cdn.org/'+board+'/threads.json', json:true},
             function (error, response, body) {
                 if (!error && response.statusCode == 200) {
@@ -34,7 +37,7 @@ module.exports = function(bot) {
                     reply.sendMessage("Error...");
                 }
             });
-    };
+    }};
 
     return {
         name: name,
