@@ -10,6 +10,7 @@
     "path": "^0.11.14",
     "request": "^2.58.0",
     "request-promise": "^0.4.2",
-    "url": "^0.10.3"
+    "url": "^0.10.3",
+    "amazon-product-api":"0.3.4"
   }
 }
