@@ -9,7 +9,7 @@ module.exports = function(bot) {
     var description = "buscador de gifs";
 
     var exec = function(msg, reply) {
-      reply.send("Plugin a la espera de mejoras por parte del dios @gabboman92");
+      reply.send("Plugin a la espera de mejoras por parte del dios @gabboman");
       /*
         var options = {
             url:'http://api.giphy.com/v1/gifs/random',
