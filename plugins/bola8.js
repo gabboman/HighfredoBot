@@ -6,7 +6,6 @@ module.exports = function(bot) {
 
     var name = "bola8";
     var description = "Hazme una pregunta";
-
     var frases = [
         'Es cierto',
         'Si, es asi',
@@ -32,7 +31,12 @@ module.exports = function(bot) {
     ];
 
     var exec = function(msg) {
-        bot.sendMessage(msg.chat.id, frases[_.random(frases.length - 1)]);
+      var pregunta= msg.command.params[0] || null;
+      if(pregunta!=null){
+        bot.sendMessage(msg.chat.id, frases[_.random(frases.length - 1)]);}
+        else{
+          bot.sendMessage(msg.chat.id, 'Pero preguntame algo, que si tu no sabes la pregunta yo no se la respuesta');
+        }
     };
 
     return {

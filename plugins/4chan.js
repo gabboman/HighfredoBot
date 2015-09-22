@@ -12,6 +12,11 @@ module.exports = function(bot) {
     var exec = function(msg, reply) {
 
         var board = msg.command.params[0] || 'w';
+        if (board.startsWith('/')){
+          board=board.substr(1);
+        }if(board.endsWith('/')){
+          board=board.substr(0,board.length-1)
+        }
         var blocked=['b','hc','s','i','gif','h'];
         if(blocked.indexOf(board)!=-1){
           reply.sendMessage("Bloqueado para ser SFW");
