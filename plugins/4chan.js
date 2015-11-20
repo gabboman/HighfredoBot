@@ -18,7 +18,8 @@ module.exports = function(bot) {
           board=board.substr(0,board.length-1)
         }
         var blocked=['b','hc','s','i','gif','h'];
-        if(blocked.indexOf(board)!=-1){
+        //if(blocked.indexOf(board)!=-1){
+        if(true){
           reply.sendMessage("Bloqueado para ser SFW");
         }else{
         request({url:'https://a.4cdn.org/'+board+'/threads.json', json:true},
