@@ -1,6 +1,7 @@
 'use strict';
 
 var math = require("mathjs");
+var safeEval = require('safe-eval')
 
 module.exports = function(bot) {
 
@@ -8,7 +9,7 @@ module.exports = function(bot) {
     var description = "simple calculator";
 
     var exec = function(msg, reply) {
-        reply.sendMessage(math.eval(msg.command.text)+"" || 'Math Error');
+        reply.sendMessage(safeEval(msg.command.text)+"" || 'Math Error');
     };
 
     return {

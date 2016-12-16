@@ -1,5 +1,6 @@
 'use strict';
-
+//No lo quito de aqui porque cualquiera que venga a ver el código se va a pasar por aqui.
+//Este es el hola mundo. Mira el stallman o el /bola8
 module.exports = function(bot) {
 
     var name = "echo";

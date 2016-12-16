@@ -11,7 +11,8 @@ module.exports = function(bot) {
     'Mira que eres pesado con las tetas',
     'no sabes abrir una pagina porno tu solo?',
     'Te has planteado mirar el código y mirar el api tu mismo?',
-    'Eres tan fe@ que pides fototetas a un bot']
+    'Eres tan fe@ que pides fototetas a un bot',
+    'No es que seas pesado, es que no entiendes que este es un grupo SFW']
     var exec = function(msg, reply) {
 
 

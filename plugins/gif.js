@@ -9,13 +9,14 @@ module.exports = function(bot) {
     var description = "buscador de gifs";
 
     var exec = function(msg, reply) {
-      reply.send("Plugin a la espera de mejoras por parte del dios @gabboman");
-      /*
+      //reply.send("Plugin a la espera de mejoras por parte del dios @gabboman");
+      
         var options = {
             url:'http://api.giphy.com/v1/gifs/random',
             qs: {
                 tag: msg.command.text || '',
-                api_key: 'dc6zaTOxFJmzC'
+                api_key: 'dc6zaTOxFJmzC',
+                rating: 'y'
             },
             json:true
         };
@@ -29,7 +30,7 @@ module.exports = function(bot) {
                 reply.send("Cannot find gifs...");
             }
         });
-    */};
+    };
 
     return {
         name: name,

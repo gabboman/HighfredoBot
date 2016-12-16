@@ -17,7 +17,7 @@ module.exports = function(bot) {
         }if(board.endsWith('/')){
           board=board.substr(0,board.length-1)
         }
-        var blocked=['b','hc','s','i','gif','h'];
+        var blocked=['b','hc','s','i','gif','h','r','s','hm','e','u','d','y','t','hr','aco'];
         //if(blocked.indexOf(board)!=-1){
         if(true){
           reply.sendMessage("Bloqueado para ser SFW");
